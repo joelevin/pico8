@@ -1,0 +1,28 @@
+{
+    "cartdata.cartdata": {
+        "prefix": "cartdata",
+        "body": [
+          "cartdata(${1:cart_name})",
+          "$0"
+        ],
+        "description": "Open cart data (once per exection)"
+    },
+    "cartdata.dget": {
+        "prefix": "dget",
+
+        "body": [
+          "dget(${1:index})",
+          "$0"
+        ],
+        "description": "Get number stored at index (call cartdata first)"
+    },
+    "cartdata.dset": {
+        "prefix": "dset",
+
+        "body": [
+          "dset(${1:index}, ${2:value})",
+          "$0"
+        ],
+        "description": "Store value at index (call cartdata first)"
+    }
+}
